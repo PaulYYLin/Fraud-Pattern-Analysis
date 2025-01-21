@@ -6,12 +6,14 @@ Meta Data
 Data Name: Canadian Anti-Fraud Centre Reporting Data.csv (61.1MB) Data Numbers: 285855 - Non-Null Data
 Columns: 15 (after removing duplicate columns with columns in French)
   
+
 <img width="672" alt="image" src="https://github.com/user-attachments/assets/d53e4ed7-91d2-4995-9d3c-2b9c145f84e7" />
 
 
 ## What are the Trends & Patterns of Cybercrime from 2021 to 2024 in Canada?
 Trend Observation
 Detect fraudulent activities through data visualization to identify trending patterns in relation to time factors. We apply an Additive Model to extract time series data to trend, seasonal and residual. What we can tell from the plot below is that the trend decreases annually..
+
  <img width="672" alt="image" src="https://github.com/user-attachments/assets/a32ecfb5-1203-4608-a63a-72b29118db82" />
 
  *𝐴𝑑𝑑𝑖𝑡𝑖𝑣𝑒𝑀𝑜𝑑𝑒𝑙 = 𝑇𝑟𝑒𝑛𝑑 + 𝑆𝑒𝑎𝑠𝑜𝑛𝑎𝑙 + 𝑅𝑒𝑠𝑖𝑑𝑢𝑎𝑙 Seasonal Analysis
@@ -21,7 +23,9 @@ To effectively conduct seasonal analysis, it is essential to eliminate the trend
 
 1. Additive Model: This approach involves calculating the observed data minus the trend component. It is straightforward and quick; while it may not completely eliminate all trends, it provides a clearer signal from the observed data.
 2. First-order Difference: This is the most commonly used method in Time Series Analysis. It helps in making the data more stationary, but it may also result in the loss of important signals from the observed data.
+
 <img width="672" alt="image" src="https://github.com/user-attachments/assets/08084f63-db33-45d6-b97b-e89207aac4cc" />
+
 By observed data minus the trend component
 
 ## Periodicity Impact Analysis
@@ -38,10 +42,12 @@ Fraud Patterns and Impact in Canada | DATA601- Group L02-6 6
 ## Intensity Frequency Analysis
 After thoroughly analyzing the regular pattern period, we can utilize the Exponential Moving Average (EMA) to assess and confirm the seasonal intensity of data that does not exhibit a trend. This method allows us to pinpoint specific periods when fraud cases are on the rise and when they are decreasing.
 We prefer the Exponential Moving Average (EMA) over the Simple Moving Average (MA) because it minimizes the influence of historical data on future predictions, as illustrated in the Autocorrelation Function (ACF) plot. These factors are essential to our analysis.
+
 <img width="672" alt="image" src="https://github.com/user-attachments/assets/e1f52c15-74af-4392-855c-2b187f7b30fc" />
 
    The data reveals distinct peaks and valleys, indicating a seasonal pattern in the frequency of cybercrime cases. Consequently, we aim to identify the features and characteristics associated with these peak occurrences.
 To begin with, we aim to comprehend the frequency of patterns. While we are aware of the routine period, the intensity frequency remains unclear. To uncover this information, we will utilize the Fourier Transform.
+
 <img width="672" alt="image" src="https://github.com/user-attachments/assets/4991105d-5562-4fe8-9508-6f69a1a4ba31" />
 
 These data show that cybercrime occurs with varying frequencies, peaking (top3) at the following intervals:
