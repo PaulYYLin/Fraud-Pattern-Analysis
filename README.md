@@ -37,7 +37,7 @@ disregarding the values in between.
 
 By analyzing the results from the ACF and PACF data, we can effectively identify the cycle period that has the most significant impact on the data points at any given time.
    The seasonal period is identified as 12 weeks, or 3 months, based on the ACF. This indicates that the data at any given time is influenced by the data from the preceding 3 months. Additionally, the PACF reveals that the data at any point is also directly impacted by the data from 4 weeks, or 1 month, prior. This suggests that certain routines occur on a monthly basis.
-Fraud Patterns and Impact in Canada | DATA601- Group L02-6 6
+
 
 ## Intensity Frequency Analysis
 After thoroughly analyzing the regular pattern period, we can utilize the Exponential Moving Average (EMA) to assess and confirm the seasonal intensity of data that does not exhibit a trend. This method allows us to pinpoint specific periods when fraud cases are on the rise and when they are decreasing.
